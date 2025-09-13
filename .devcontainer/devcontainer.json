@@ -1,0 +1,10 @@
+{
+  "name": "Laravel Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace/project",
+  "features": {},
+  "postCreateCommand": "composer install && php artisan key:generate",
+  "forwardPorts": [8000],
+  "remoteUser": "vscode"
+}

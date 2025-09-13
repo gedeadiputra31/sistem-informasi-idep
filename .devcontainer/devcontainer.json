@@ -2,9 +2,8 @@
   "name": "Laravel Dev Container",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": " /var/lib/docker/codespacemount/workspace/sistem-informasi-idep/project",
   "features": {},
-  "postCreateCommand": "composer install && php artisan key:generate",
+  "postCreateCommand": "cd project && composer install && php artisan key:generate",
   "forwardPorts": [8000],
   "remoteUser": "vscode"
 }

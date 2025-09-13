@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .devcontainer/Dockerfile
     volumes:
       - .:/workspace
     ports:
@@ -13,7 +13,7 @@ services:
       - mariadb
 
   mariadb:
-    image: mariadb:12.1.0
+    image: mariadb:11.8.3
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: root
